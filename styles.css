@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'cursive1';
+  src: url('../assets/fonts/cursive1.ttf') format('truetype');
+}
+
+/* Apply cursive globally to everything */
+body, .os-container, .window, .window-header, .window-content,
+.taskbar, .start-menu, .notifications-container, h1, h2, h3, p, span, button {
+  font-family: 'cursive1', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background */
+body, .os-container {
+  background-image: url('../assets/images/wallpaper1.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Taskbar */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Windows */
+.window {
+  position: absolute;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #000;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  cursor: grab;
+  font-family: 'cursive1', cursive;
+}
+
+.window-header {
+  background: #333;
+  color: white;
+  padding: 5px;
+  cursor: grab;
+  font-family: 'cursive1', cursive;
+  font-size: 1.2rem;
+}
+
+.window-content {
+  flex: 1;
+  padding: 10px;
+  overflow: auto;
+  font-family: 'cursive1', cursive;
+  font-size: 1rem;
+}
+
+/* Notifications */
+.notifications-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 9999;
+}
+
+.notification {
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'cursive1', cursive;
+}
