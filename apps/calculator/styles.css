@@ -1,0 +1,38 @@
+.calculator-app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'cursive1', cursive;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.calculator-display {
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  text-align: right;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.calculator-buttons button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: #ddd;
+}
+
+.calculator-buttons button:hover {
+  background: #bbb;
+}
