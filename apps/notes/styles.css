@@ -1,0 +1,14 @@
+.notes-app {
+  height: 100%;
+  font-family: 'cursive1', cursive;
+}
+
+.notes-app textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-family: 'cursive1', cursive;
+}
